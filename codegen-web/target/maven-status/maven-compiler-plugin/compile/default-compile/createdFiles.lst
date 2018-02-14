@@ -1,0 +1,5 @@
+com/networknt/codegen/handler/FrameworkListHandler.class
+com/networknt/codegen/handler/GeneratorServiceHandler.class
+com/networknt/codegen/handler/ValidateUploadFileHandler.class
+com/networknt/codegen/CodegenWebConfig.class
+com/networknt/codegen/handler/SchemaGetHandler.class

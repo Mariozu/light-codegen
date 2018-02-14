@@ -1,0 +1,54 @@
+{
+  "lightapi.net/codegen/listFramework/0.0.1" : {
+    "schema": {
+    },
+    "scope": "codegen.r"
+  },
+  "lightapi.net/codegen/getSchema/0.0.1" : {
+    "schema": {
+      "title" : "Service",
+      "type" : "object",
+      "properties" : {
+        "framework": {
+          "type" : "string"
+        }
+      },
+      "required" : ["framework"]
+    },
+    "scope": "codegen.r"
+  },
+  "lightapi.net/codegen/validateUploadFile/0.0.1" : {
+    "schema": {
+    },
+    "scope": "codegen.r"
+  },
+  "lightapi.net/codegen/generate/0.0.1" : {
+    "schema": {
+      "title" : "Service",
+      "type" : "object",
+      "properties" : {
+        "generators" : {
+          "type" : "array",
+          "items": {
+            "properties": {
+              "model": {
+                "type": "object"
+              },
+              "config" : {
+                "type" : "object"
+              },
+              "framework": {
+                "type" : "string"
+              }
+            },
+            "required": ["config", "framework"]
+          },
+          "maxItems": 5,
+          "minItems": 1
+        }
+      }
+    },
+    "scope": "codegen.w"
+  }
+
+}
